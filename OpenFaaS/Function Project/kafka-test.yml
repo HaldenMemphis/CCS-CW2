@@ -1,0 +1,25 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  http-test:
+    lang: java11
+    handler: ./http-test
+    image: jasondennis12138/http-test:latest
+  kafka-test:
+    lang: java11
+    handler: ./kafka-test
+    image: jasondennis12138/kafka-test:latest
+    expose:
+        - 8080
+        - 9092
+
+  martix-test:
+      lang: java11
+      handler: ./martix-test
+      image: jasondennis12138/martix-test:latest
+  martix-test-single:
+      lang: java11
+      handler: ./martix-test-single
+      image: jasondennis12138/martix-test-single:latest

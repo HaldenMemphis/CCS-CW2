@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="81d9e91f-0c03-41a8-a207-ccd9b0e0d613" name="openfaas">
+        <fileTransfer rootFolder="/home/ubuntu" accessType="SFTP" host="20.254.71.46" port="22" sshConfigId="b7456dcd-72c7-4cdc-893b-c57e2f411eeb" sshConfig="ubuntu@20.254.71.46:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
